@@ -1,5 +1,6 @@
 // Your code here
 
+<<<<<<< HEAD
 class Polygon {
   constructor(sides) {
     this.sides = sides;
@@ -57,4 +58,22 @@ class Square extends Polygon
     return this.sides[0] * this.sides[0]
   }
   
+=======
+class Polygon{
+    constructor(sidesOfShape){
+        this.sidesOfShape = sidesOfShape;
+    }
+
+    get getCount(){
+        return this.sidesOfShape.length;
+    }
+
+    get perimeter(){
+        let sum = 0;
+        for(const num of this.sidesOfShape){
+            sum += num;
+        }
+        return sum;
+    }
+>>>>>>> 9af091ad1c37f0c14e29253ced7edd56b7f0ef76
 }
